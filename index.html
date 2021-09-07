@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--
+  Designed by Vladyslav Voronkov
+  inst: ovladaettt
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Розіграш подарунків від Shtorm</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="site-container">
+    <!--Ждет пока прогрузятся скрипты и плавно убирается
+      Нужна для того что бы не было видно появления и исчезновения блоков и прогрузки изображений
+    -->
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <div class="header">
+    <!--Заполнение анкеты-->
+    <div onclick="close_form()" id="form" class="form">
+      <form  action="#">
+        <div class="form_upper">
+            <div class="form-upper-child">
+              <h3>Номер особового рахунку: </h3>
+              <input required type="text" placeholder="123456789">
+              <input type="submit" value="Зареєструвати">
+            </div>
+        </div><br>
+        
+      </form>
+    </div>
+ <!--Навигация-->
+    <div class="nav">
+      <div class="logo"><img src="img/logo_hite.png.png" alt=""></div>
+      <!--Мобильная навигация-->
+
+      <ul class="nav-panel">
+        <li>Головна</li>
+        <a href="https://www.shtorm.net"><li>Офіційна сторінка</li></a>
+        <a href="https://www.shtorm.net/uk/internet-u-kvartiru"><li>Замовити підключення</li></a>
+        <a href="https://www.shtorm.net/uk/kontakti#no-back"><li>Підтримка</li></a>
+      </ul>
+        <div class="header-social">
+          <a href="https://www.facebook.com/shtormnet/"><img src="img/facebook_logo.svg" alt="youtube_logo"></a>
+          <a href="https://www.instagram.com/shtormnet/"><img src="img/instagram_logo.svg" alt="instagram_logo"></a>
+        </div>
+    </div>
+    <div class="mobile-nav">
+      <img src="img/logo_hite.png.png" alt="">
+      <span id="open-menu" onclick="open_menu()" class="material-icons md-light">menu</span>
+     
+    </div>
+
+    <div id="menu" class="menu">
+      <ul>
+        <li class="menu-active">Головна</li>
+        <a href="https://www.shtorm.net"><li>Офіційна сторінка</li></a>
+        <a href="https://www.shtorm.net/uk/internet-u-kvartiru"><li>Замовити підключення</li></a>
+        <a href="https://www.shtorm.net/uk/kontakti#no-back"><li>Підтримка</li></a>
+        <span id="close-menu" onclick="close_menu()" class="material-icons md-light">close</span>
+      </ul>
+    </div>
+    <!--Главный блок-->
+    
+    <div class="body">
+      <div class="body-social">
+        <ul class="second-nav-panel">
+          <li>Головна</li>
+          <a href="https://www.shtorm.net"><li>Офіційна сторінка</li></a>
+          <a href="https://www.shtorm.net/uk/internet-u-kvartiru"><li>Замовити підключення</li></a>
+          <a href="https://www.shtorm.net/uk/kontakti#no-back"><li>Підтримка</li></a>
+        </ul>
+
+        <div class=" second-social">
+          <a href="https://www.facebook.com/shtormnet/"><img src="img/facebook_logo.svg" alt="facebook_logo"></a>
+          <a href="https://www.instagram.com/shtormnet/"><img src="img/instagram_logo.svg" alt="instagram_logo"></a>
+        </div>
+      
+      <div class="body-text-column">
+        <h1>Розіграш подарунків серед абонентів Shtorm</h1>
+        <h3>Отримай можливість виграти пакети інтернет та обладнання</h3>
+        <div class="body-buttons" id="body-buttons">
+          <button onclick="open_form()" class="btn-glow-in">Заповнити анкету</button>
+          <a href="#conditions"><button class="btn-glow-out">Умови розіграшу *</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+
+  </div>
+  <!--Условия акции-->
+  <div id="conditions"  class="conditions">
+    <a>* Для того, щоб взяти участь у розіграші подарунків від компанії Шторм, який проходить до 24 грудня 2020 року, Вам необхідно:</a>
+    <ul>
+     <div class="how-to">
+      <span class="material-icons">
+        person
+        </span>
+        <li>Бути діючим абонентом інтернет або телебачення від Шторм, з активним тарифним пакетом і відсутньою заборгованістю</li>
+     </div>
+
+     <div class="how-to">
+      <span class="material-icons">
+        contacts
+        </span>
+      <li>Внести та відправити у форму, що знаходиться вище, номер свого особового рахунку інтернет або номер договору кабельного телебачення</li>
+     </div>
+      
+     <div class="how-to">
+      <span class="material-icons">
+        timer
+        </span>
+      <li>Чекати на результати розіграшу, що будуть оголошені протягом 3х днів з дня завершення розіграшу</li>
+    </div>
+    </ul>
+    <p>
+      Переможці обиратимуться за допомогою сервісу random.org. Кожен номер особового рахунку та/чи номер договору пройде перевірку на відповідність умовам розіграшу у момент проведення розіграшу. Кількість номерів рахунку чи договорів КТБ зареєстрованих на одну особу - не обмежена. Абонент може зареєструвати для участі у розіграші і номер особового рахунку інтернет і номер договору КТБ, при цьому категорично заборонено відправляти один номер декілька разів. При виявленні дублікатів - номер буде знято з розіграшу. Увага! Під час прийому номерів рахунку/договорів КТБ перевірка даних не проводиться. Перевіряйте правильність введення та/або наявність цифр самостійно.
+      Компанія Шторм має право відмовити в участі у розіграші абонентам, стан особових рахунків яких не відповідає умовам конкурсу. Компанія Шторм має право відмовити будь-кому в участі у розіграші без пояснення причин, а також інші права.
+    </p><br><br>
+  </div>
+
+</div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $("#body-buttons").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1500);
+       });
+   });
+   </script>
+</body>
+
+</html>
